@@ -12,13 +12,9 @@ private:
         Node* next;
         Node* prev;
 
-        Node(){
+        Node() : next(nullptr), prev(nullptr) {}
 
-        }
-
-        Node(T value){
-            data = value;
-        }
+        Node(T value) : data(value), next(nullptr), prev(nullptr) {}
 
         void killSelf(){
             delete this;
@@ -39,7 +35,8 @@ public:
     }
 
     ~CircularList(){
-        // TODO
+        clear();
+        delete head;
     }
 
     T front(){
