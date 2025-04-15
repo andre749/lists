@@ -71,7 +71,7 @@ public:
 
     T pop_front(){
         if (is_empty()) {
-            throw std::out_of_range("La lista está vacía");
+            throw std::out_of_range("La lista está vacía"); //  return T{};
         }
 
         Node *temp = head->next;
@@ -87,7 +87,7 @@ public:
 
     T pop_back(){
         if (is_empty()) {
-            throw std::out_of_range("La lista está vacía");
+            throw std::out_of_range("La lista está vacía"); //  return T{};
         }
 
         Node *temp = head->prev;
@@ -136,6 +136,9 @@ public:
     }
 
     T& operator[](int pos){
+        if (pos < 0 or pos >= nodes) {
+            throw std::out_of_range("indice fuera de rango");
+        }
         Node *temp = head->next;
         for (int i = 0; i < pos; ++i) {
             temp = temp->next;

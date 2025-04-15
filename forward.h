@@ -47,7 +47,7 @@ class ForwardList : public List<T> {
         T back(){
             Node* it=head;
             while(it->next!= nullptr){
-                it->next;
+                it = it->next;
             }
             return it->data;
         }
@@ -62,6 +62,7 @@ class ForwardList : public List<T> {
         void push_back(T data){
             if(head== nullptr) {
                 head = new Node(data);
+                nodes++;
                 return;
             }
             if(head->next==nullptr){

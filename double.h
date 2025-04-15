@@ -266,7 +266,7 @@ class DoubleList : public List<T> {
 
 
         std::string name(){
-            return "ForwardList";
+            return "DoubleList";
         }
 
         void print(){

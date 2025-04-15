@@ -1,0 +1,3 @@
+D:/ANEL/UNIVERSIDAD/4TO CICLO/AED/tarea1/lists/cmake-build-debug/CMakeFiles/lists.dir
+D:/ANEL/UNIVERSIDAD/4TO CICLO/AED/tarea1/lists/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/ANEL/UNIVERSIDAD/4TO CICLO/AED/tarea1/lists/cmake-build-debug/CMakeFiles/rebuild_cache.dir
